@@ -43,8 +43,9 @@ max_fps: 30                             # If Hardware Supports this it will be f
 
 [cam 2]
 mode: mjpg                              # mjpg/rtsp
+rtsp_port: 8554
 port: 8081                              # Port
-device:  /dev/v4l/by-id/usb-SYX-230524-J_HD_Camera-video-index0     # See Log for available ...
+device: /base/soc/i2c0mux/i2c@1/ov5647@36     # See Log for available ...
 resolution: 640x480                     # widthxheight format
 max_fps: 50                             # If Hardware Supports this it will be forced, ohterwise ignored/coerced.
 #custom_flags:                          # You can run the Stream Services with custom flags.
